@@ -3,11 +3,21 @@ class Circle {
     this.radius = radius;
   }
   getArea() {
-    var unRoundedArea = Math.PI * this.radius ** 2;
-    var roundedArea = Math.round(unRoundedArea * 100) / 100;
-    return roundedArea;
+    return parseFloat((Math.PI * this.radius ** 2).toPrecision(3));
+
   }
-  // return (Math.PI * this.radius ** 2).toPrecision(3);
-}
+};
 
 module.exports = Circle;
+
+// .toPrecision(3))
+    //  var unRoundedArea = Math.PI * this.radius ** 2;
+    //  if(unRoundedArea > 10) {
+    //     return parseFloat()
+    //  }
+    //  var roundedArea = Math.round(unRoundedArea * 1e1) / 1e1;
+    //  return roundedArea;
+    // }
+    // var unRoundedArea = Math.PI * this.radius ** 2;
+    // var roundedArea = Math.round(unRoundedArea * 100) / 100;
+    // return roundedArea;
