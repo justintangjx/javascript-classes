@@ -21,6 +21,11 @@ test("Circle(1).getPerimeter() should return 6.3", function() {
 });
 
 test("Circle(2).getPerimeter() should return 12.6", function() {
-    var circle = new Circle(2);
-    expect(circle.getPerimeter()).toEqual(12.6);
-  });
+  var circle = new Circle(2);
+  expect(circle.getPerimeter()).toEqual(12.6);
+});
+
+test("Circle(3).getPerimeter() should return 6.3", function() {
+  var circle = new Circle(3);
+  expect(circle.getPerimeter()).toEqual(18.8);
+});
