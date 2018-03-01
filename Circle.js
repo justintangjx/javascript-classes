@@ -6,6 +6,9 @@ class Circle {
     return parseFloat((Math.PI * this.radius ** 2).toPrecision(3));
 
   }
+  getPerimeter () {
+      return parseFloat((2 * Math.PI * this.radius).toFixed(1));
+  }
 };
 
 module.exports = Circle;
